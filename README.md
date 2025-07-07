@@ -83,13 +83,19 @@ Agents in this framework leverage a variety of AI-powered tools:
 ## 📦 Project Structure
 
 ```
-main.py         # Entry point
-traders.py      # Trader agent logic
-templates.py    # Prompt and message templates
-market.py       # Market data logic
-mcp_params.py   # MCP server configuration
-app.py          # Gradio-based UI
-trading_floor.py# Automated trading floor
+main.py           # Entry point
+traders.py        # Trader agent logic
+trading_floor.py  # Automated trading floor (periodic agent execution)
+app.py            # Gradio-based UI for interactive trading visualization
+accounts.py       # Account and transaction management for traders
+util.py           # UI utilities (CSS, JS, color definitions)
+reset.py          # Resets all trader accounts and strategies to initial state
+accounts_client.py# Client for interacting with account MCP server
+market.py         # Market data logic and integration
+mcp_params.py     # MCP server configuration
+tracers.py        # Tracing and logging utilities
+database.py       # Local database for accounts, logs, and market data
+templates.py      # Prompt and message templates
 ```
 
 ---
@@ -139,13 +145,14 @@ uv run app.py
 |--------------------------------|------------------------------------------------------------------|
 | `uv run app.py`                | Launches the Gradio web UI for interactive trading visualization |
 | `uv run trading_floor.py`      | Runs the automated trading floor (periodic agent execution)      |
+| `uv run reset.py`              | Resets all trader accounts and strategies to initial state       |
 | _traders.py (not direct)_      | Core agent logic, imported by other scripts                      |
 
 **Examples:**
 ```sh
 uv run app.py            # Start the UI
 uv run trading_floor.py  # Start the automated trading floor
-uv run main.py           # Run the main entry/demo
+uv run reset.py          # Reset all trader accounts and strategies
 ```
 
 ---
