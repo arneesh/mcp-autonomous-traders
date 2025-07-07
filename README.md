@@ -50,6 +50,36 @@ flowchart TD
 
 ---
 
+## 🏗️ MCP Server & Tool Architecture
+
+### MCP Servers
+This project orchestrates multiple Model Context Protocol (MCP) servers to modularize and scale agentic workflows:
+
+**Trader MCP Servers:**
+- 🗃️ **Accounts Server** — Manages account data and resources
+- 📣 **Push Notification Server** — Handles notifications and alerts
+- 📈 **Market Data Server** — Provides real-time or historical market data (local or Polygon MCP)
+
+**Researcher MCP Servers:**
+- 🌐 **Fetch Server** — Retrieves web data for research
+- 🔎 **Brave Search Server** — Integrates Brave search for financial/news research
+- 🧠 **Memory Server** — Persistent memory for knowledge graph and context
+
+> **Total unique MCP servers:** 6 (3 for trader, 3 for researcher)
+
+### Agentic Tools
+Agents in this framework leverage a variety of AI-powered tools:
+- 🤖 **Researcher Tool** — Allows the trader to invoke the Researcher agent for deep research
+- 🌍 **Research Tool** — Used by the Researcher for web/news/financial research
+- 🧠 **Knowledge Graph Tools** — Store and recall information, build expertise over time
+- 📊 **Financial Data Tools** — Access stock prices, company info, and market analytics
+- 💸 **Trading Tools** — Execute trades, rebalance portfolios, manage assets
+- 🗂️ **Entity Tools** — Persistent memory shared among agents
+
+> The framework is extensible: you can add more tools and servers as your use case grows.
+
+---
+
 ## 📦 Project Structure
 
 ```
