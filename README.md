@@ -100,7 +100,7 @@ POLYGON_API_KEY=your-polygon-key
 ## ▶️ Usage
 Run the main entry point:
 ```sh
-uv run main.py
+uv run traders.py
 ```
 
 ---
