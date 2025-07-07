@@ -38,18 +38,18 @@ flowchart TD
     E --> I["Polygon, Market Data APIs"]
     C --> J["Push Notifications"]
     C --> K["Persistent Memory (Knowledge Graph)"]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#ffd,stroke:#333,stroke-width:2px
-    style E fill:#bdf,stroke:#333,stroke-width:2px
-    style F fill:#fff,stroke:#333,stroke-width:2px
-    style G fill:#eee,stroke:#333,stroke-width:2px
-    style H fill:#fdd,stroke:#333,stroke-width:2px
-    style I fill:#dfd,stroke:#333,stroke-width:2px
-    style J fill:#ffd,stroke:#333,stroke-width:2px
-    style K fill:#eef,stroke:#333,stroke-width:2px
-    classDef highlight fill:#ff0,stroke:#333,stroke-width:2px;
+    style A fill:#222,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#444,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#555,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#666,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#777,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#888,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#999,stroke:#fff,stroke-width:2px,color:#fff
+    style I fill:#aaa,stroke:#fff,stroke-width:2px,color:#fff
+    style J fill:#bbb,stroke:#fff,stroke-width:2px,color:#fff
+    style K fill:#ccc,stroke:#fff,stroke-width:2px,color:#fff
+    classDef highlight fill:#000,stroke:#fff,stroke-width:2px,color:#fff;
 ```
 
 ---
@@ -100,7 +100,7 @@ POLYGON_API_KEY=your-polygon-key
 ## ▶️ Usage
 Run the main entry point:
 ```sh
-uv run traders.py
+uv run main.py
 ```
 
 ---
