@@ -88,6 +88,8 @@ traders.py      # Trader agent logic
 templates.py    # Prompt and message templates
 market.py       # Market data logic
 mcp_params.py   # MCP server configuration
+app.py          # Gradio-based UI
+trading_floor.py# Automated trading floor
 ```
 
 ---
@@ -102,7 +104,7 @@ cd mcp-autonomous-traders
 
 ### 2. Install dependencies with [uv](https://github.com/astral-sh/uv)
 ```sh
-uv add openai python-dotenv
+uv sync
 ```
 _Add any additional dependencies as needed:_
 ```sh
@@ -126,7 +128,24 @@ POLYGON_API_KEY=your-polygon-key
 ## ▶️ Usage
 Run the main entry point:
 ```sh
-uv run main.py
+uv run app.py
+```
+
+---
+
+## 🚦 Run Modes
+
+| Command                        | Description                                                      |
+|--------------------------------|------------------------------------------------------------------|
+| `uv run app.py`                | Launches the Gradio web UI for interactive trading visualization |
+| `uv run trading_floor.py`      | Runs the automated trading floor (periodic agent execution)      |
+| _traders.py (not direct)_      | Core agent logic, imported by other scripts                      |
+
+**Examples:**
+```sh
+uv run app.py            # Start the UI
+uv run trading_floor.py  # Start the automated trading floor
+uv run main.py           # Run the main entry/demo
 ```
 
 ---
