@@ -4,10 +4,6 @@
 
 ---
 
-![Trading Illustration](https://user-images.githubusercontent.com/placeholder/trading-illustration.png)
-
----
-
 ## ✨ Overview
 MCP Autonomous Traders is a next-generation Python framework for building, running, and experimenting with autonomous trading agents. It empowers both researchers and traders to automate research, trading, and portfolio management using state-of-the-art LLMs and real-time market data.
 
@@ -109,11 +105,6 @@ uv run main.py
 - Add new agent types in `traders.py` or as new modules
 - Customize prompts and workflows in `templates.py`
 - Integrate new data sources via `market.py` and `mcp_params.py`
-
----
-
-## 💬 Contact
-For questions, suggestions, or contributions, please open an issue or contact the maintainer.
 
 ---
 
