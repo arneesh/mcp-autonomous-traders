@@ -16,14 +16,6 @@ A modular, AI-powered framework for autonomous trading and financial research.
 
 MCP Autonomous Traders is a **next-generation Python framework** for building, running, and experimenting with autonomous trading agents. It empowers both researchers and traders to automate research, trading, and portfolio management using state-of-the-art LLMs and real-time market data.
 
-### Key Benefits
-
-- **AI-First Design**: Leverage multiple LLMs for intelligent decision-making
-- **Real-Time Analytics**: Access live market data and historical analysis
-- **Autonomous Operations**: Set-and-forget trading strategies
-- **Modular Architecture**: Easily extensible and customizable
-- **Modern UI**: Intuitive Gradio-based interface for monitoring
-
 ---
 
 ## Features
@@ -143,9 +135,6 @@ cd mcp-autonomous-traders
 ```bash
 # Using uv (recommended)
 uv sync
-
-# Add additional packages
-uv add <package-name>
 ```
 
 ### 3. Configure Environment
