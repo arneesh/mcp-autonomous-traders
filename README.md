@@ -6,7 +6,7 @@
 [![MCP](https://img.shields.io/badge/MCP-Protocol-orange.svg)](https://modelcontextprotocol.io)
 [![AI](https://img.shields.io/badge/AI-Powered-purple.svg)](https://openai.com)
 
-**A modular, AI-powered framework for autonomous trading and financial research.**
+A modular, AI-powered framework for autonomous trading and financial research.
 
 </div>
 
@@ -239,8 +239,6 @@ def custom_data_source():
     # Your custom data integration
     pass
 ```
-
----
 
 <div align="center">
 
