@@ -1,55 +1,53 @@
-# 🚀 MCP Autonomous Traders
+# MCP Autonomous Traders
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.8+-brightgreen.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.12+-brightgreen.svg)](https://python.org)
 [![MCP](https://img.shields.io/badge/MCP-Protocol-orange.svg)](https://modelcontextprotocol.io)
 [![AI](https://img.shields.io/badge/AI-Powered-purple.svg)](https://openai.com)
 
 **A modular, AI-powered framework for autonomous trading and financial research.**
 
-*Empowering the next generation of autonomous trading and research.*
-
-[🚀 Quick Start](#-quickstart) • [📖 Documentation](#-features) • [🛠️ Architecture](#-mcp-server--tool-architecture) • [🎯 Examples](#-usage)
-
 </div>
 
 ---
 
-## 🌟 Overview
+## Overview
 
 MCP Autonomous Traders is a **next-generation Python framework** for building, running, and experimenting with autonomous trading agents. It empowers both researchers and traders to automate research, trading, and portfolio management using state-of-the-art LLMs and real-time market data.
 
-### 🎯 Key Benefits
+### Key Benefits
 
-- **🧠 AI-First Design**: Leverage multiple LLMs for intelligent decision-making
-- **📊 Real-Time Analytics**: Access live market data and historical analysis
-- **🔄 Autonomous Operations**: Set-and-forget trading strategies
-- **🔗 Modular Architecture**: Easily extensible and customizable
-- **📱 Modern UI**: Intuitive Gradio-based interface for monitoring
+- **AI-First Design**: Leverage multiple LLMs for intelligent decision-making
+- **Real-Time Analytics**: Access live market data and historical analysis
+- **Autonomous Operations**: Set-and-forget trading strategies
+- **Modular Architecture**: Easily extensible and customizable
+- **Modern UI**: Intuitive Gradio-based interface for monitoring
 
 ---
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 🏗️ **Architecture**
-- **Modular agent & tool architecture**
-- **Multi-LLM support** (OpenAI, DeepSeek, Grok, Gemini, OpenRouter)
-- **Researcher & trader agent roles**
-- **MCP server orchestration**
+### **Architecture**
+
+- Modular agent & tool architecture
+- Multi-LLM support\*\* (OpenAI, DeepSeek, Grok, Gemini, OpenRouter)
+- Researcher & trader agent roles
+- MCP server orchestration
 
 </td>
 <td width="50%">
 
-### 🤖 **Intelligence**
-- **Persistent memory & knowledge graph**
-- **Automated trading & rebalancing workflows**
-- **Push notifications & reporting**
-- **Environment-based configuration**
+### **Intelligence**
+
+- Persistent memory & knowledge graph
+- Automated trading & rebalancing workflows
+- Push notifications & reporting
+- Environment-based configuration
 
 </td>
 </tr>
@@ -57,33 +55,35 @@ MCP Autonomous Traders is a **next-generation Python framework** for building, r
 
 ---
 
-## 🛠️ MCP Server & Tool Architecture
+## MCP Server & Tool Architecture
 
-### 🖥️ MCP Servers
+### MCP Servers
+
 This project orchestrates multiple **Model Context Protocol (MCP)** servers to modularize and scale agentic workflows:
 
 <div align="center">
 
-| Server Type | Purpose | Icon |
-|-------------|---------|------|
-| **Accounts Server** | Account data & resource management | 🗃️ |
-| **Push Notification Server** | Alerts & notifications | 📣 |
-| **Market Data Server** | Real-time/historical market data | 📈 |
-| **Fetch Server** | Web data retrieval | 🌐 |
-| **Brave Search Server** | Financial/news research | 🔎 |
-| **Memory Server** | Persistent knowledge graph | 🧠 |
+| Server Type              | Purpose                            |
+| ------------------------ | ---------------------------------- |
+| Accounts Server          | Account data & resource management |
+| Push Notification Server | Alerts & notifications             |
+| Mark Data Server         | Real-time/historical market data   |
+| Fet Server               | Web data retrieval                 |
+| Brave Search Server      | Financial/news research            |
+| Memory Server            | Persistent knowledge graph         |
 
 </div>
 
-### 🔧 Agentic Tools
+### Agentic Tools
+
 Agents leverage a comprehensive suite of AI-powered tools:
 
 ```mermaid
 graph LR
-    A[🤖 Researcher Tool] --> B[🌍 Research Tool]
-    C[🧠 Knowledge Graph] --> D[📊 Financial Data]
-    E[💸 Trading Tools] --> F[🗂️ Entity Tools]
-    
+    A[Researcher Tool] --> B[Research Tool]
+    C[Knowledge Graph] --> D[Financial Data]
+    E[Trading Tools] --> F[Entity Tools]
+
     style A fill:#ff6b6b,stroke:#fff,stroke-width:2px,color:#fff
     style B fill:#4ecdc4,stroke:#fff,stroke-width:2px,color:#fff
     style C fill:#45b7d1,stroke:#fff,stroke-width:2px,color:#fff
@@ -94,21 +94,21 @@ graph LR
 
 ---
 
-## 📊 Project Flow
+## Project Flow
 
 ```mermaid
 flowchart TD
-    A["👤 User/Operator"] -->|"Runs main.py"| B["🚀 Main Entry Point"]
-    B --> C["📈 Trader Agent"]
-    C --> D["🔬 Researcher Agent"]
-    C --> E["📊 Market Data"]
-    C --> F["📝 Templates"]
-    C --> G["⚙️ MCP Server Config"]
-    D --> H["🤖 External APIs<br/>(OpenAI, DeepSeek, Grok, Gemini, OpenRouter)"]
-    E --> I["📡 Polygon, Market Data APIs"]
-    C --> J["📱 Push Notifications"]
-    C --> K["🧠 Persistent Memory<br/>(Knowledge Graph)"]
-    
+    A["User/Operator"] -->|"Runs main.py"| B["Main Entry Point"]
+    B --> C["Trader Agent"]
+    C --> D["Researcher Agent"]
+    C --> E["Market Data"]
+    C --> F["Templates"]
+    C --> G["MCP Server Config"]
+    D --> H["External APIs<br/>(OpenAI, DeepSeek, Grok, Gemini, OpenRouter)"]
+    E --> I["Polygon, Market Data APIs"]
+    C --> J["Push Notifications"]
+    C --> K["Persistent Memory<br/>(Knowledge Graph)"]
+
     style A fill:#2c3e50,stroke:#ecf0f1,stroke-width:3px,color:#ecf0f1
     style B fill:#e74c3c,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
     style C fill:#3498db,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
@@ -124,39 +124,41 @@ flowchart TD
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
-📁 mcp-autonomous-traders/
-├── 🚀 main.py                 # Entry point
-├── 📈 traders.py              # Trader agent logic
-├── 🏢 trading_floor.py        # Automated trading floor
-├── 🖥️ app.py                  # Gradio-based UI
-├── 💼 accounts.py             # Account management
-├── 🎨 util.py                 # UI utilities
-├── 🔄 reset.py                # Reset accounts & strategies
-├── 📡 accounts_client.py      # Account MCP client
-├── 🗃️ accounts_server.py      # Account MCP server
-├── 📊 market_server.py        # Market data MCP server
-├── 📱 push_server.py          # Push notification MCP server
-├── 📈 market.py               # Market data logic
-├── ⚙️ mcp_params.py           # MCP server configuration
-├── 🔍 tracers.py              # Tracing & logging
-├── 🗄️ database.py             # Local database
-└── 📝 templates.py            # Prompt templates
+mcp-autonomous-traders/
+├── main.py                 # Entry point
+├── traders.py              # Trader agent logic
+├── trading_floor.py        # Automated trading floor
+├── app.py                  # Gradio-based UI
+├── accounts.py             # Account management
+├── util.py                 # UI utilities
+├── reset.py                # Reset accounts & strategies
+├── accounts_client.py      # Account MCP client
+├── accounts_server.py      # Account MCP server
+├── market_server.py        # Market data MCP server
+├── push_server.py          # Push notification MCP server
+├── market.py               # Market data logic
+├── mcp_params.py           # MCP server configuration
+├── tracers.py              # Tracing & logging
+├── database.py             # Local database
+└── templates.py            # Prompt templates
 ```
 
 ---
 
-## ⚡ Quickstart
+## Quickstart
 
-### 1️⃣ Clone & Setup
+### 1. Clone & Setup
+
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/arneesh/mcp-autonomous-traders
 cd mcp-autonomous-traders
 ```
 
-### 2️⃣ Install Dependencies
+### 2. Install Dependencies
+
 ```bash
 # Using uv (recommended)
 uv sync
@@ -165,7 +167,8 @@ uv sync
 uv add <package-name>
 ```
 
-### 3️⃣ Configure Environment
+### 3. Configure Environment
+
 Create a `.env` file in the project root:
 
 ```env
@@ -181,7 +184,8 @@ BRAVE_API_KEY=your-brave-key
 POLYGON_API_KEY=your-polygon-key
 ```
 
-### 4️⃣ Launch
+### 4. Launch
+
 ```bash
 uv run app.py
 uv run trading_floor.py
@@ -189,26 +193,27 @@ uv run trading_floor.py
 
 ---
 
-## 🎮 Run Modes
+## Run Modes
 
 <div align="center">
 
-| Command | Description | Use Case |
-|---------|-------------|----------|
-| `uv run app.py` | 🖥️ **Interactive UI** | Real-time trading visualization |
-| `uv run trading_floor.py` | 🤖 **Automated Trading** | Periodic agent execution |
-| `uv run reset.py` | 🔄 **Reset System** | Clear accounts & strategies |
-| `uv run accounts_server.py` | 🗃️ **Account Server** | Manage balances & trades |
-| `uv run market_server.py` | 📊 **Market Server** | Share price lookup |
-| `uv run push_server.py` | 📱 **Push Server** | Notifications via Pushover |
+| Command                     | Description           | Use Case                        |
+| --------------------------- | --------------------- | ------------------------------- |
+| `uv run app.py`             | **Interactive UI**    | Real-time trading visualization |
+| `uv run trading_floor.py`   | **Automated Trading** | Periodic agent execution        |
+| `uv run reset.py`           | **Reset System**      | Clear accounts & strategies     |
+| `uv run accounts_server.py` | **Account Server**    | Manage balances & trades        |
+| `uv run market_server.py`   | **Market Server**     | Share price lookup              |
+| `uv run push_server.py`     | **Push Server**       | Notifications via Pushover      |
 
 </div>
 
 ---
 
-## 🧩 Extending the Framework
+## Extending the Framework
 
-### 🔌 Add New Agents
+### Add New Agents
+
 ```python
 # traders.py
 class CustomTrader(BaseTrader):
@@ -217,7 +222,8 @@ class CustomTrader(BaseTrader):
         self.strategy = "custom_strategy"
 ```
 
-### 📝 Customize Prompts
+### Customize Prompts
+
 ```python
 # templates.py
 CUSTOM_PROMPT = """
@@ -225,7 +231,8 @@ Your custom trading prompt here...
 """
 ```
 
-### 📊 Integrate Data Sources
+### Integrate Data Sources
+
 ```python
 # market.py
 def custom_data_source():
@@ -236,7 +243,5 @@ def custom_data_source():
 ---
 
 <div align="center">
-
-*"The future of trading is autonomous, intelligent, and modular."*
 
 </div>
