@@ -83,13 +83,6 @@ graph LR
     A[Researcher Tool] --> B[Research Tool]
     C[Knowledge Graph] --> D[Financial Data]
     E[Trading Tools] --> F[Entity Tools]
-
-    style A fill:#ff6b6b,stroke:#fff,stroke-width:2px,color:#fff
-    style B fill:#4ecdc4,stroke:#fff,stroke-width:2px,color:#fff
-    style C fill:#45b7d1,stroke:#fff,stroke-width:2px,color:#fff
-    style D fill:#96ceb4,stroke:#fff,stroke-width:2px,color:#fff
-    style E fill:#ffeaa7,stroke:#fff,stroke-width:2px,color:#fff
-    style F fill:#dda0dd,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -108,18 +101,6 @@ flowchart TD
     E --> I["Polygon, Market Data APIs"]
     C --> J["Push Notifications"]
     C --> K["Persistent Memory<br/>(Knowledge Graph)"]
-
-    style A fill:#2c3e50,stroke:#ecf0f1,stroke-width:3px,color:#ecf0f1
-    style B fill:#e74c3c,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style C fill:#3498db,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style D fill:#9b59b6,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style E fill:#1abc9c,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style F fill:#f39c12,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style G fill:#34495e,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style H fill:#e67e22,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style I fill:#27ae60,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style J fill:#f1c40f,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
-    style K fill:#8e44ad,stroke:#ecf0f1,stroke-width:2px,color:#ecf0f1
 ```
 
 ---
