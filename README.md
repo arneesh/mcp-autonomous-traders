@@ -182,7 +182,7 @@ uv run trading_floor.py
 
 ## Extending the Framework
 
-### Add New Agents
+**Add New Agents**
 
 ```python
 # traders.py
@@ -192,7 +192,7 @@ class CustomTrader(BaseTrader):
         self.strategy = "custom_strategy"
 ```
 
-### Customize Prompts
+**Customize Prompts**
 
 ```python
 # templates.py
@@ -201,7 +201,7 @@ Your custom trading prompt here...
 """
 ```
 
-### Integrate Data Sources
+**Integrate Data Sources**
 
 ```python
 # market.py
